@@ -22,7 +22,7 @@ api = DNSTwister::API.new
 domain = "example.com"
 
 res = api.fuzz(domain)
-fuzzy_doamins = res.dig("fuzzy_domains") || []
+fuzzy_domains = res.dig("fuzzy_domains") || []
 p fuzzy_domains.map { |domain| domain.dig "domain" }
 # => ["example.com", "examplea.com", "exampleb.com", "examplec.com", "exampled.com", ...]
 
