@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dnstwister.report/api/safebrowsing/6578616d706c652e636f6d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - dnstwister.report
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Dec 2019 02:39:25 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc5a6fa692516db33fb0acb3dc06042301575945564; expires=Thu, 09-Jan-20
+        02:39:24 GMT; path=/; domain=.dnstwister.report; HttpOnly; Secure
+      Via:
+      - 1.1 vegur
+      Cache-Control:
+      - max-age=43200
+      Cf-Cache-Status:
+      - MISS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 542bd92228b6ae8b-KIX
+    body:
+      encoding: ASCII-8BIT
+      string: '{"domain":"example.com","domain_as_hexadecimal":"6578616d706c652e636f6d","fuzz_url":"http://dnstwister.report/api/fuzz/6578616d706c652e636f6d","issue_detected":false,"parked_score_url":"http://dnstwister.report/api/parked/6578616d706c652e636f6d","resolve_ip_url":"http://dnstwister.report/api/ip/6578616d706c652e636f6d","url":"http://dnstwister.report/api/safebrowsing/6578616d706c652e636f6d"}
+
+        '
+    http_version: 
+  recorded_at: Tue, 10 Dec 2019 02:39:25 GMT
+recorded_with: VCR 5.0.0
