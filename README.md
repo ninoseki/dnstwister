@@ -1,5 +1,6 @@
 # dnstwister
 
+[![Gem Version](https://badge.fury.io/rb/dnstwister.svg)](https://badge.fury.io/rb/dnstwister)
 [![Build Status](https://travis-ci.com/ninoseki/dnstwister.svg?branch=master)](https://travis-ci.com/ninoseki/dnstwister)
 [![Coverage Status](https://coveralls.io/repos/github/ninoseki/dnstwister/badge.svg?branch=master)](https://coveralls.io/github/ninoseki/dnstwister?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/ninoseki/dnstwister/badge)](https://www.codefactor.io/repository/github/ninoseki/dnstwister)
