@@ -41,7 +41,8 @@ module DNSTwister
         when 200
           yield json
         else
-          raise Error, "Unsupported response code returned: #{code}"
+          error = json.dig("error")
+          raise Error, "Unsupported response code returned: #{code} (#{error})"
         end
       end
     end
