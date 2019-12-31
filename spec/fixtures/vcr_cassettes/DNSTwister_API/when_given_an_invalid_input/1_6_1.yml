@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://dnstwister.report/api/ip/666f6f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - dnstwister.report
+  response:
+    status:
+      code: 400
+      message: BAD REQUEST
+    headers:
+      Date:
+      - Tue, 31 Dec 2019 04:30:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '78'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9a284a722b12ce300b5f8050596ed1da1577766658; expires=Thu, 30-Jan-20
+        04:30:58 GMT; path=/; domain=.dnstwister.report; HttpOnly; SameSite=Lax; Secure
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - BYPASS
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 54d98571191cf8af-NRT
+    body:
+      encoding: UTF-8
+      string: '{"error":"Malformed domain or domain not represented in hexadecimal
+        format."}
+
+        '
+    http_version: 
+  recorded_at: Tue, 31 Dec 2019 04:30:56 GMT
+recorded_with: VCR 5.0.0

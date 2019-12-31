@@ -39,4 +39,10 @@ RSpec.describe DNSTwister::API, :vcr do
       expect(res).to be_a(Hash)
     end
   end
+
+  context "when given an invalid input" do
+    it do
+      expect { subject.ip("foo") }.to raise_error(DNSTwister::Error, /Malformed domain or domain not represented in hexadecimal format/)
+    end
+  end
 end
